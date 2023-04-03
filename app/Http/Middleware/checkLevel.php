@@ -18,7 +18,7 @@ class checkLevel
     {
         $level = array_slice(func_get_args(),2);
         foreach($level as $level);
-        $user = \Auth::user(level)->level;
+        $user = \Auth::user()->level;
         if($user == $level) {
             return $next($request);
 
